@@ -54,6 +54,13 @@ namespace CategoryService1 {
         __Marshaller_CategoryLookUp,
         __Marshaller_ProductInfo);
 
+    static readonly grpc::Method<global::CategoryService1.ProductInfo, global::CategoryService1.ProductInfo> __Method_changeCategoryOfProduct = new grpc::Method<global::CategoryService1.ProductInfo, global::CategoryService1.ProductInfo>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "changeCategoryOfProduct",
+        __Marshaller_ProductInfo,
+        __Marshaller_ProductInfo);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -89,6 +96,11 @@ namespace CategoryService1 {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::CategoryService1.ProductInfo> changeCategoryOfProduct(global::CategoryService1.ProductInfo request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -100,7 +112,8 @@ namespace CategoryService1 {
           .AddMethod(__Method_GetCategoryById, serviceImpl.GetCategoryById)
           .AddMethod(__Method_AddProduct, serviceImpl.AddProduct)
           .AddMethod(__Method_getProdcutById, serviceImpl.getProdcutById)
-          .AddMethod(__Method_getProductsByCategoryId, serviceImpl.getProductsByCategoryId).Build();
+          .AddMethod(__Method_getProductsByCategoryId, serviceImpl.getProductsByCategoryId)
+          .AddMethod(__Method_changeCategoryOfProduct, serviceImpl.changeCategoryOfProduct).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -114,6 +127,7 @@ namespace CategoryService1 {
       serviceBinder.AddMethod(__Method_AddProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::CategoryService1.ProductCreate, global::CategoryService1.ProductInfo>(serviceImpl.AddProduct));
       serviceBinder.AddMethod(__Method_getProdcutById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::CategoryService1.ProductLookUp, global::CategoryService1.ProductInfo>(serviceImpl.getProdcutById));
       serviceBinder.AddMethod(__Method_getProductsByCategoryId, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::CategoryService1.CategoryLookUp, global::CategoryService1.ProductInfo>(serviceImpl.getProductsByCategoryId));
+      serviceBinder.AddMethod(__Method_changeCategoryOfProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::CategoryService1.ProductInfo, global::CategoryService1.ProductInfo>(serviceImpl.changeCategoryOfProduct));
     }
 
   }

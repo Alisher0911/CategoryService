@@ -45,4 +45,3 @@
 /Users/alisher/Projects/CategoryService1/CategoryService1/obj/Debug/netcoreapp3.1/CategoryService1.dll
 /Users/alisher/Projects/CategoryService1/CategoryService1/obj/Debug/netcoreapp3.1/CategoryService1.pdb
 /Users/alisher/Projects/CategoryService1/CategoryService1/obj/Debug/netcoreapp3.1/CategoryService1.genruntimeconfig.cache
-/Users/alisher/Projects/CategoryService1/CategoryService1/obj/Debug/netcoreapp3.1/CategoryService1.csprojAssemblyReference.cache

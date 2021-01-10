@@ -42,5 +42,12 @@ namespace CategoryService1.Repositories
         {
             return await _context.Products.Where(x => x.CategoryId == id).ToListAsync();
         }
+
+        public async Task<bool> ChangeCategory(ProductInfo product)
+        {
+            var productToUpdate = await _context.Products.Where(x => x.Id == product.Id).FirstOrDefaultAsync();
+            productToUpdate.CategoryId = product.CategoryId.Id;
+            return await (_context.SaveChangesAsync()) > 0;
+        }
     }
 }

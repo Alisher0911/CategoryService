@@ -122,5 +122,13 @@ namespace CategoryService1.Services
                 await responseStream.WriteAsync(productInfo);
             }
         }
+
+        public override async Task<ProductInfo> changeCategoryOfProduct(ProductInfo request, ServerCallContext context)
+        {
+            var res = await _productRepository.ChangeCategory(request);
+            if (res)
+                return await Task.FromResult(request);
+            throw new Exception("Failed");
+        }
     }
 }

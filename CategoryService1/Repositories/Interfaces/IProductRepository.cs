@@ -10,5 +10,6 @@ namespace CategoryService1.Repositories.Interfaces
         Task<Product> AddProduct(ProductCreate product);
         Task<Product> GetProductById(int id);
         Task<IEnumerable<Product>> GetProductsByCategoryId(int id);
+        Task<bool> ChangeCategory(ProductInfo product);
     }
 }
