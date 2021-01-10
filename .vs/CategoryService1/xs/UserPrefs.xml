@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{DA4490AE-7C60-4BAA-9E23-C731004ACCD2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CategoryService1/Startup.cs">
+    <Files>
+      <File FileName="CategoryService1/CategoryService1.csproj" Line="8" Column="35" />
+      <File FileName="CategoryService1/Data/DataContext.cs" />
+      <File FileName="CategoryService1/Startup.cs" Line="48" Column="30" />
+      <File FileName="CategoryService1/Services/CategoryService.cs" />
+      <File FileName="CategoryService1/Repositories/Interfaces/ICategoryRepository.cs" />
+      <File FileName="CategoryService1/Repositories/Interfaces/IProductRepository.cs" />
+      <File FileName="CategoryService1/Repositories/CategoryRepository.cs" />
+      <File FileName="CategoryService1/Repositories/ProductRepository.cs" />
+      <File FileName="CategoryService1/Protos/shop.proto" />
+      <File FileName="CategoryService1/Models/Category.cs" />
+      <File FileName="CategoryService1/Models/Product.cs" />
+      <File FileName="CategoryService1/appsettings.Development.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CategoryService1" expanded="True">
+            <Node name="CategoryService1" expanded="True">
+              <Node name="Protos" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CategoryService1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
